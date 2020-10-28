@@ -7,16 +7,33 @@ body{
 }
 
 /* private value */
+.profile-name{
+    font-size: 80px;
+}
+
 .profile-img{
     width: 300px;
 }
 
 .skills{
     width: 996px;
+    margin: 0 auto;
 }
 
-.work-exp-content{
+.skills-list{
+    display: inline-block;
+    line-height: 2;
+    text-align: left;
+    border-left: 1px solid #fff;
+}
+
+.experience-content{
+    border-left: 1px solid#96A9C4;
+}
+
+.experience-content-text{
     width: 45%;
+    font-size: 20px;
 }
 
 .social-media-icon:hover{
@@ -25,6 +42,11 @@ body{
 
 .contact-link:hover{
     color: royalblue;
+}
+
+.social-media-icon-list{
+    display: flex;
+    justify-content: center;
 }
 
 /* share value */
@@ -40,41 +62,22 @@ body{
     font-weight: 500;
 }
 
-.h1{
-    font-size: 40px;
+.h2{
+    font-size: 32px;
 }
 
-.h5{
-    font-size: 20px;
-}
-
-.h6{
-    font-size: 16px;
-}
-
-.display-3{
-    font-size: 67.5px;
+.h4{
+    font-size: 24px;
 }
 
 .container{
     width: 1200px;
-}
-   
-.mx-auto{
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
 }
 
-.mt-3{
-    margin-top: 16px;
-}
-
-.mt-4{
-    margin-top: 24px;
-}
-
-.mt-5{
+.my-5{
     margin-top: 48px;
+    margin-bottom: 48px;
 }
 
 .ml-2{
@@ -97,22 +100,13 @@ body{
     margin-bottom: 48px;
 }
 
-.py-3{
-    padding-top: 16px;
-    padding-bottom: 16px;
-}
-
 .py-4{
     padding-top: 24px;
     padding-bottom: 24px;
 }
 
-.pl-3{
-    padding-left: 16px;
-}
-
-.pb-2{
-    padding-bottom: 8px;
+.pl-4{
+    padding-left: 24px;
 }
 
 .pb-3{
@@ -121,26 +115,6 @@ body{
 
 .d-block{
     display: block;
-}
-
-.d-inline-block{
-    display: inline-block;
-}
-
-.d-flex{
-    display: flex;
-}
-
-.justify-content-center{
-    justify-content: center;
-}
-
-.border-left-light{
-    border-left: 1px solid #fff;
-}
-
-.border-left-secondary{
-    border-left: 1px solid #96A9C4;
 }
 
 .border-bottom-primary{
@@ -155,10 +129,6 @@ body{
     text-align: center;
 }
 
-.text-left{
-    text-align: left;
-}
-
 .text-secondary{
     color: #A00404;
 }
@@ -169,10 +139,6 @@ body{
 
 .line-height-m{
     line-height: 1.5;
-}
-
-.line-height-l{
-    line-height: 2;
 }
 
 .bg-dark{
