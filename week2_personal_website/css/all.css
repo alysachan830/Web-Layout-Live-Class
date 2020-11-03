@@ -58,6 +58,10 @@ body{
 	font-family: 'Roboto', sans-serif;
 }
 
+img{
+	display: block;
+}
+
 /* private class */
 
 .banner{
@@ -72,6 +76,10 @@ body{
 
 .job-position{
 	margin-bottom: 48px;
+}
+
+.social-media-list a{
+	display: block;
 }
 
 .about{
