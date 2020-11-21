@@ -1,13 +1,13 @@
 .banner{
 	height: 840px;
-    background: url('https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/banner.png?raw=true') center/cover no-repeat;
+    background: url('../images/banner.png') center/cover no-repeat;
     
     @include pad{
         height: 840px;
     }
 
     @include mobile{
-        background: url('https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/banner-sm.png?raw=true') center/cover no-repeat;
+        background: url('../images/banner-sm.png') center/cover no-repeat;
 		height: 394px;
     }
 }
@@ -180,7 +180,7 @@
 }
 
 .co-branding-frames{
-    background: url('https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/bg.png?raw=true') center/cover no-repeat;
+    background: url('../images/bg.png') center/cover no-repeat;
 }
 
 .co-branding-frames li:nth-child(1){
