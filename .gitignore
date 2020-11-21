@@ -1,7 +1,0 @@
-public
-node_modules
-.publish
-# 助教第4週的gulp範例裏的gitignore有ignore dist，但這裏我沒有ignore
-# dist
-.vscode
-.DS_Store
