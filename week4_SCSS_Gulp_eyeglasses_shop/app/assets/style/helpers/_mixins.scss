@@ -1,0 +1,17 @@
+@mixin link-hover{
+    transition: all .5s;
+    &:hover{
+        @content;
+    }
+}
+
+@mixin link-img-hover-zoom-in{
+    a{
+        overflow: hidden;
+    }
+
+    img:hover{
+        transition: all .5s ease;
+        transform: scale(1.25);
+    }
+}

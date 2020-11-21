@@ -1,0 +1,26 @@
+.breadcrumb{
+    a{
+        &.active{
+            color: $primary;
+        }
+
+        &::after{
+            content: "/";
+            margin: 0 4px;
+        }
+
+        @include link-hover{
+            color: $secondary;
+        }
+
+        @include pad{
+            font-size: 14px;
+        }
+    }
+
+    li:last-child a{
+        &::after{
+            content: "";
+        }
+    }
+}

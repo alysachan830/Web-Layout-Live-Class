@@ -1,0 +1,14 @@
+.bg{
+    &-primary{
+        background: $primary;
+    }
+    &-secondary{
+        background: $secondary;
+    }
+    &-light{
+        background: $light;
+    }
+    &-black{
+        background: $black;
+    }
+}

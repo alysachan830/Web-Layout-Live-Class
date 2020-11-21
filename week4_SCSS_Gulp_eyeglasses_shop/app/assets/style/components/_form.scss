@@ -1,0 +1,85 @@
+.form{
+    max-width: 730px;
+    margin: 0 auto;
+
+    @include pad{
+        max-width: 450px;
+    }
+
+    @include mobile{
+        max-width: 345px;
+    }
+
+}
+
+.form-text{
+    margin-bottom: 20px;
+}
+
+.form-group{
+    margin-bottom: 16px;
+
+    @include pad{
+        margin-bottom: 8px;
+    }
+}
+
+label{
+    margin-bottom: 4px;
+}
+
+input{
+    height: 50px;
+}
+
+textarea{
+    resize: none;
+    height: 136px;
+}
+
+input,textarea{
+    width: 100%;
+    border-style: none;
+    border: 1px solid #000000;
+    padding: 14px 0 15px 16px;
+
+    @include pad{
+        &::placeholder{
+            font-size: 14px;
+        }
+    }
+}
+
+input[type="checkbox"]{
+    height: initial;
+    width: initial;
+    display: initial;
+}
+
+.form-group-checkbox-agree{
+    label{
+        display: initial;
+    }
+}
+
+input[type="submit"]{
+	border: none;
+	padding: 16px 143px; 
+    margin: 42px auto 0 auto;
+    width: inherit;
+    cursor: pointer;
+    
+    @include link-hover{
+        background: $secondary;
+    }
+
+    @include pad{
+        padding: 8px 76px;
+		margin: 20px auto 0 auto;
+    }
+
+    @include mobile{
+        padding: 8px 54.5px;
+		margin: 24px auto 0 auto;
+    }
+}

@@ -1,0 +1,19 @@
+.blog-nav{
+    a{
+        padding: 12px 24px;
+
+        @include link-hover{
+            background: $primary;
+        }
+
+        @include pad{
+            font-size: 16px;
+            padding: 16px;
+        }
+
+        @include mobile{
+            font-size: 14px;
+            padding: 16px 2px;
+        }
+    }
+}

@@ -1,0 +1,73 @@
+.text-sm{
+    font-size: $font-size-base * 0.875; //14px
+}
+
+.text-base{
+    font-size: $font-size-base; //16px
+}
+
+.text-xl{
+    font-size: $font-size-base * 1.25; //20px
+}
+
+.text-2xl{
+    font-size: $font-size-base * 1.5; //24px
+}
+
+.text-3xl{
+    font-size: $font-size-base * 2; //32px
+}
+
+.text-4xl{
+    font-size: $font-size-base * 2.25; //36px
+}
+
+.text-5xl{
+    font-size: $font-size-base * 3; //48px
+}
+
+.text-6xl{
+    font-size: $font-size-base * 4; //64px
+}
+
+
+//font-weight
+.font-weight-medium{
+	font-weight: 500;
+}
+
+.font-weight-bold{
+	font-weight: 700;
+}
+
+.font-weight-black{
+    font-weight: 900;
+}
+
+// font-style
+
+.font-italic{
+    font-style: italic;
+}
+
+//text-align
+.text-center{
+    text-align: center;
+}
+
+//text color
+
+.text{
+    &-primary{
+        color: $primary;
+    }
+    &-secondary{
+        color: $secondary;
+    }
+    &-white{
+        color: #fff;
+    }
+    &-black{
+        color: #000;
+    }
+}

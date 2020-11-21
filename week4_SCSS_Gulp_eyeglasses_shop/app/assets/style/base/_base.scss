@@ -1,0 +1,30 @@
+*,*::before,*::after{
+	box-sizing: border-box;
+}
+
+body{
+	font-family: $font-family-base;
+	line-height: 1.5;
+}
+
+img{
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+
+a{
+	text-decoration: none;
+	display: block;
+}
+
+label,input{
+	display: block;
+}
+
+//container
+.container{
+    max-width: 1110px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
