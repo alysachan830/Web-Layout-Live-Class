@@ -14,7 +14,7 @@ $(document).ready(() => {
 
   $(".nav-bar-link a").each( function(){
     const aHref = $(this).attr('href');
-    $(this).toggleClass("active", aHref === currentURL.split("/")[1]);
+    $(this).toggleClass("active", aHref === currentURL.split("/")[4]);
   })
 
   //Admin Modal 顯示按鈕

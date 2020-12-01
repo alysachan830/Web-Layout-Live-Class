@@ -12,7 +12,7 @@ $(document).ready(function () {
   var currentURL = window.location.pathname;
   $(".nav-bar-link a").each(function () {
     var aHref = $(this).attr('href');
-    $(this).toggleClass("active", aHref === currentURL.split("/")[1]);
+    $(this).toggleClass("active", aHref === currentURL.split("/")[4]);
   }); //Admin Modal 顯示按鈕
 
   $("#admin-modal-btn").on("click", function () {
