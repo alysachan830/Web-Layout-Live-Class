@@ -1,0 +1,27 @@
+.font-l{
+    font-size: 24px;
+}
+
+.font-m{
+    font-size: 20px;
+}
+
+.font-size-base{
+    font-size: $font-size-base;
+}
+
+.font-s{
+    font-size: 14px;
+}
+
+.font-xs{
+    font-size: 12px;
+}
+
+.code{
+    font-family: 'Roboto Mono';
+    color: $tertiary;
+    background: $primary;
+    padding: 2px 4px;
+    border-radius: 2px;
+}

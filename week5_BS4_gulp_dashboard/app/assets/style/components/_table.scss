@@ -1,0 +1,25 @@
+.table thead tr {
+    border-bottom: 1px solid #000;
+}
+
+.table thead th{
+    border: none;
+}
+
+.table th, .table td{
+    border: none;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+tbody tr{
+    border-bottom: 1px solid $secondary;
+
+    &:hover{
+        background: $primary;
+    }
+}
+
+tbody tr th{
+    font-weight: 400;
+}

@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Assignment</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="./assets/style/all.css">
+</head>
+
+<body class="d-flex">
+  <nav class="nav-bar d-flex flex-column justify-content-between bg-primary py-5">
+    <div>
+      <h1 class="mb-5">
+        <a class="nav-bar-logo" href="assignment.html">Answer</a>
+      </h1>
+      <ul class="nav-bar-link">
+        <li class="mb-4">
+          <a class="nav-bar-link-item pl-5 py-2" href="#">
+            <span class="material-icons align-top mr-3">insert_chart</span>
+            <span class="font-weight-bold">Dashboard</span>
+          </a>
+        </li>
+
+        <li class="mb-4">
+          <a class="nav-bar-link-item pl-5 py-2" href="#">
+            <span class="material-icons align-top mr-3">question_answer</span>
+            <span class="font-weight-bold">Question</span>
+          </a>
+        </li>
+
+        <li class="mb-4">
+          <a class="active nav-bar-link-item pl-5 py-2" href="assignment.html">
+            <span class="material-icons align-top mr-3">assignment</span>
+            <span class="font-weight-bold">Assignment</span>
+          </a>
+        </li>
+
+        <li class="mb-4">
+          <a class="nav-bar-link-item pl-5 py-2" href="#">
+            <span class="material-icons align-top mr-3">video_library</span>
+            <span class="font-weight-bold">Course</span>
+          </a>
+        </li>
+
+        <li class="mb-4">
+          <a class="nav-bar-link-item pl-5 py-2" href="admin.html">
+            <span class="material-icons align-top mr-3">supervisor_account</span>
+            <span class="font-weight-bold">Admin</span>
+          </a>
+        </li>
+
+        <li class="mb-4">
+          <a class="nav-bar-link-item pl-5 py-2" href="#">
+            <span class="material-icons align-top mr-3">settings</span>
+            <span class="font-weight-bold">Settings</span>
+          </a>
+        </li>
+
+      </ul>
+    </div>
+
+    <div class="d-flex ml-5">
+      <img class="profile-pic mr-3" src="./assets/images/andychen.jpeg" alt="">
+      <ul>
+        <li>
+          <h3 class="font-size-base font-weight-bold mb-1">Andy Chen</h3>
+        </li>
+        <li>
+          <a class="text-gray" href="mailto:andy0401@mail.com">andy0401@mail.com</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  
+<div class="w-100 p-5">
+  <div class="d-flex mb-6 align-items-center justify-content-between">
+    <div>
+      <div class="d-flex align-items-center">
+        <h2 class="mr-6 font-l font-weight-bold">Assignment</h2>
+        
+        <div class="dropdown">
+          <button class="btn font-weight-bold" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            All Courses
+            <span class="text-tertiary material-icons">
+              keyboard_arrow_down
+              </span>
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">HTML, CSS</a>
+            <a class="dropdown-item" href="#">JavaScript</a>
+            <a class="dropdown-item" href="#">Vue</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="d-flex">
+      <a href="#">
+        <span class="mr-4 material-icons">search</span>
+      </a>
+      <a href="#">
+        <span class="material-icons">notifications_active</span>
+      </a>
+    </div>
+  </div>
+
+  <div>
+    <div class="mb-1 d-flex justify-content-between align-items-end">
+      <div class="dropdown">
+        <button class="btn font-weight-bold p-0" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          All (4)
+          <span class="text-tertiary material-icons">
+            keyboard_arrow_down
+            </span>
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="#">Chapter Assignment 1</a>
+          <a class="dropdown-item" href="#">Chapter Assignment 2</a>
+          <a class="dropdown-item" href="#">Final Assignment</a>
+        </div>
+      </div>
+      <span class="text-gray font-xs">2 comments</span>
+    </div>
+
+    <div class="row">
+      <div class="col-4">
+        <div class="list-group" id="list-tab" role="tablist">
+          <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">
+            <ul class="d-flex justify-content-between">
+              <li class="font-xs">Chapter Assignment 2</li>
+              <li class="font-xs">4 hrs ago</li>
+            </ul>
+
+            <ul class="d-flex justify-content-between align-items-center">
+              <li>
+                <h3 class="font-size-base font-weight-bold">Please check this file…</h3>
+              </li>
+              <li>
+                <h3 class="font-xs text-gray">Emily Wang</h3>
+              </li>
+            </ul>            
+          </a>
+          <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">
+            <ul class="d-flex justify-content-between">
+              <li class="font-xs">Chapter Assignment 1</li>
+              <li class="font-xs">12 hrs ago</li>
+            </ul>
+
+            <ul class="d-flex justify-content-between align-items-center">
+              <li>
+                <h3 class="font-size-base font-weight-bold">My Homework</h3>
+              </li>
+              <li>
+                <h3 class="font-xs text-gray">David Xu</h3>
+              </li>
+            </ul>  
+          </a>
+          <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">
+            <ul class="d-flex justify-content-between">
+              <li class="font-xs">Final Assignment</li>
+              <li class="font-xs">18 hrs ago</li>
+            </ul>
+
+            <ul class="d-flex justify-content-between align-items-center">
+              <li>
+                <h3 class="font-size-base font-weight-bold">Have a problem with this…</h3>
+              </li>
+              <li>
+                <h3 class="font-xs text-gray">Tony Wei</h3>
+              </li>
+            </ul>  
+          </a>
+          <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">
+            <ul class="d-flex justify-content-between">
+              <li class="font-xs">Final Assignment</li>
+              <li class="font-xs">19 hrs ago</li>
+            </ul>
+
+            <ul class="d-flex justify-content-between align-items-center">
+              <li>
+                <h3 class="font-size-base font-weight-bold">Did I do it right?</h3>
+              </li>
+              <li>
+                <h3 class="font-xs text-gray">Christina Lin</h3>
+              </li>
+            </ul>  
+          </a>
+        </div>
+      </div>
+      <div class="col-8 position-relative">
+        <div class="tab-content mb-4" id="nav-tabContent">
+          <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
+            <div class="card">
+              <div class="card-header bg-primary d-flex justify-content-between align-items-center">
+                <ul>
+                  <li class="font-xs">Chapter Assignment 2 / HTML&CSS</li>
+                  <li>
+                    <h3 class="font-size-base font-weight-bold">Please check this file for me, thanks!</h3>
+                  </li>
+                </ul>
+                <a href="#">
+                  <span class="material-icons">
+                    more_vert
+                  </span>
+                </a>
+              </div>
+              <div class="card-body">
+                <div class="d-flex align-items-start mb-3">
+                  <img class="profile-pic mr-2" src="./assets/images/emilywang.jpeg" alt="Emily Wang">
+                  <div class="border-bottom w-100">
+                    <ul class="mb-3">
+                      <li class="font-weight-bold">Emily Wang</li>
+                      <li class="text-gray font-xs">10:38 AM (4 hours ago)</li>
+                    </ul>
+                    <p>Hi Teacher, the attached file is my homework of chapter 2. And here comes a question: Why in the following code the height of the <span class="code">div</span> is bigger than the height of the img ? There is a gap below the image, but it doesn’t seems to be a padding/margin. What is the gap or extra space below image?</p>
+                    <a class="btn btn-primary border mb-3" href="#" role="button" download>
+                      <span class="material-icons">attach_file</span>
+                      HW-2-David.zip
+                    </a>
+                  </div>
+                </div>
+
+                
+
+                <div class="d-flex align-items-start">
+                  <img class="profile-pic mr-2" src="./assets/images/andychen.jpeg" alt="Emily Wang">
+                  <div>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <ul class="mb-3">
+                        <li class="font-weight-bold">Andy Chen (You)</li>
+                        <li class="text-gray font-xs">13:24 AM (1 hours ago)</li>
+                      </ul>
+                      <div class="d-flex">
+                        <a class="mr-4" href="#">
+                          <span class="material-icons">
+                            star_border
+                            </span>
+                        </a>
+                        <a href="#">
+                          <span class="material-icons">
+                            edit
+                          </span>
+                        </a>
+                      </div>
+                    </div>
+                    <p class="mb-0">Hi David, by default, an image is rendered inline, like a letter so it sits on the same line that a, b, c and d sit on. There is space below that line for the descenders you find on letters like g, j, p and q. <br><br>You can:<br><br>• adjust the <span class="code">vertical-align</span> of the image to position it elsewhere (e.g. the <span class="code">middle</span> ) or<br>• change the <span class="code">display</span> so it isn’t inline.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
+            <div class="card">
+              <div class="card-header bg-primary d-flex justify-content-between align-items-center">
+                <ul>
+                  <li class="font-xs">Chapter Assignment 1 / HTML&CSS</li>
+                  <li>
+                    <h3 class="font-size-base font-weight-bold">My Homework</h3>
+                  </li>
+                </ul>
+                <a href="#">
+                  <span class="material-icons">
+                    more_vert
+                  </span>
+                </a>
+              </div>
+              <div class="card-body">
+                <div class="d-flex align-items-start">
+                  <img class="profile-pic mr-2" src="./assets/images/emilywang.jpeg" alt="Emily Wang">
+                  <div class="w-100">
+                    <ul class="mb-3">
+                      <li class="font-weight-bold">Emily Wang</li>
+                      <li class="text-gray font-xs">10:38 AM (4 hours ago)</li>
+                    </ul>
+                    <p>My homework...</p>
+                    <a class="btn btn-primary border mb-3" href="#" role="button" download>
+                      <span class="material-icons">attach_file</span>
+                      HW-2-David.zip
+                    </a>
+                  </div>
+                </div>
+
+              
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
+            <div class="card">
+              <div class="card-header bg-primary d-flex justify-content-between align-items-center">
+                <ul>
+                  <li class="font-xs">Final Assignment</li>
+                  <li>
+                    <h3 class="font-size-base font-weight-bold">Have a problem with this…</h3>
+                  </li>
+                </ul>
+                <a href="#">
+                  <span class="material-icons">
+                    more_vert
+                  </span>
+                </a>
+              </div>
+              <div class="card-body">
+                <div class="d-flex align-items-start mb-3">
+                  <img class="profile-pic mr-2" src="./assets/images/emilywang.jpeg" alt="Emily Wang">
+                  <div class="border-bottom w-100">
+                    <ul class="mb-3">
+                      <li class="font-weight-bold">Emily Wang</li>
+                      <li class="text-gray font-xs">10:38 AM (4 hours ago)</li>
+                    </ul>
+                    <p>Hi Teacher, here is my problem...</p>
+                    <a class="btn btn-primary border mb-3" href="#" role="button" download>
+                      <span class="material-icons">attach_file</span>
+                      my problem
+                    </a>
+                  </div>
+                </div>
+
+                
+
+                <div class="d-flex align-items-start">
+                  <img class="profile-pic mr-2" src="./assets/images/andychen.jpeg" alt="Emily Wang">
+                  <div>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <ul class="mb-3">
+                        <li class="font-weight-bold">Andy Chen (You)</li>
+                        <li class="text-gray font-xs">13:24 AM (1 hours ago)</li>
+                      </ul>
+                      <div class="d-flex">
+                        <a class="mr-4" href="#">
+                          <span class="material-icons">
+                            star_border
+                            </span>
+                        </a>
+                        <a href="#">
+                          <span class="material-icons">
+                            edit
+                          </span>
+                        </a>
+                      </div>
+                    </div>
+                    <p class="mb-0">Hi David, by default, an image is rendered inline, like a letter so it sits on the same line that a, b, c and d sit on. There is space below that line for the descenders you find on letters like g, j, p and q. <br><br>You can:<br><br>• adjust the <span class="code">vertical-align</span> of the image to position it elsewhere (e.g. the <span class="code">middle</span> ) or<br>• change the <span class="code">display</span> so it isn’t inline.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">
+            <div class="card">
+              <div class="card-header bg-primary d-flex justify-content-between align-items-center">
+                <ul>
+                  <li class="font-xs">Final Assignment</li>
+                  <li>
+                    <h3 class="font-size-base font-weight-bold">Did I do it right?</h3>
+                  </li>
+                </ul>
+                <a href="#">
+                  <span class="material-icons">
+                    more_vert
+                  </span>
+                </a>
+              </div>
+              <div class="card-body">
+                <div class="d-flex align-items-start mb-3">
+                  <img class="profile-pic mr-2" src="./assets/images/emilywang.jpeg" alt="Emily Wang">
+                  <div class="border-bottom w-100">
+                    <ul class="mb-3">
+                      <li class="font-weight-bold">Emily Wang</li>
+                      <li class="text-gray font-xs">10:38 AM (4 hours ago)</li>
+                    </ul>
+                    <p>Hi Teacher, did I do it right? </p>
+                    <a class="btn btn-primary border mb-3" href="#" role="button" download>
+                      <span class="material-icons">attach_file</span>
+                      my work
+                    </a>
+                  </div>
+                </div>
+
+                <div class="d-flex align-items-start">
+                  <img class="profile-pic mr-2" src="./assets/images/andychen.jpeg" alt="Emily Wang">
+                  <div>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <ul class="mb-3">
+                        <li class="font-weight-bold">Andy Chen (You)</li>
+                        <li class="text-gray font-xs">13:24 AM (1 hours ago)</li>
+                      </ul>
+                      <div class="d-flex">
+                        <a class="mr-4" href="#">
+                          <span class="material-icons">
+                            star_border
+                            </span>
+                        </a>
+                        <a href="#">
+                          <span class="material-icons">
+                            edit
+                          </span>
+                        </a>
+                      </div>
+                    </div>
+                    <p class="mb-0">Hi David, by default, an image is rendered inline, like a letter so it sits on the same line that a, b, c and d sit on. There is space below that line for the descenders you find on letters like g, j, p and q. <br><br>You can:<br><br>• adjust the <span class="code">vertical-align</span> of the image to position it elsewhere (e.g. the <span class="code">middle</span> ) or<br>• change the <span class="code">display</span> so it isn’t inline.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        
+        <div class="d-flex justify-content-between align-items-center">
+          <div class="d-flex">
+            <a class="mr-4" href="#"><span class="material-icons">keyboard_arrow_left</span></a>
+            <a href="#"><span class="material-icons">keyboard_arrow_right</span></a>
+          </div>
+          <div>
+            <button type="button" class="btn btn-outline-tertiary mr-3 px-5 py-2">Mark as read</button>
+            <button type="button" id="reply-comment" class="btn btn-tertiary px-5 py-2">Reply</button>
+          </div>
+        </div>
+
+        <div class="editor position-absolute">
+          <div class="card">
+            <div class="card-header">
+              <span class="font-weight-bold mr-4">Body Text
+                <span class="material-icons">arrow_drop_down</span>
+              </span>
+                <span class="material-icons mr-4">format_bold</span>
+                <span class="material-icons mr-4">format_italic</span>
+                <span class="material-icons mr-4">format_list_bulleted</span>
+                <span class="material-icons mr-4">format_list_numbered</span>
+                <span class="material-icons mr-4">photo</span>
+                <span class="material-icons mr-4">insert_link</span>
+                <span class="material-icons">code</span>
+            </div>
+            <div class="card-body">
+                <textarea class="border-0 d-block w-100" name="comment" id="comment" cols="30" rows="10" placeholder="Reply an answer…"></textarea>
+              <div class="d-flex justify-content-end">
+                <button type="button" id="cancel-reply" class="btn btn-outline-tertiary mr-2 py-2 px-5">Cancel</button>
+                <button type="button" class="btn btn-tertiary py-2 px-5">Reply</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        
+      </div>
+    </div>
+
+
+  </div>
+</div>
+
+
+
+
+
+
+
+  <script src="./assets/js/vendors.js"></script>
+  <script src="./assets/js/all.js"></script>
+
+  
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,19 @@
+// bootstrap
+@import "bootstrap/bootstrap.scss";
+
+// base
+@import "base/base";
+
+// components
+@import "components/table";
+@import "components/pagination";
+
+// helpers
+@import "helpers/text";
+
+// layout
+@import "layout/layout.scss";
+
+//page
+@import "page/assignment";
+@import "page/admin";
