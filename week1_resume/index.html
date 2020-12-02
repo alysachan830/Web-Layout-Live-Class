@@ -11,13 +11,13 @@
 <body>
     <div class="container my-5">
         <div class="profile">
-            <h1 class="profile-name font-en pb-3 mb-5 border-bottom-primary">Joanne <br> Chen</h1>
-            <img class="profile-img mb-5" src="https://github.com/hexschool/webLayoutTraining1st/blob/master/week1/photo.png?raw=true" alt="Profile's image">
+            <h1 class="profile-name font-en pb-3 mb-5 border-bottom-primary" data-aos="fade-left">Joanne <br> Chen</h1>
+            <img class="profile-img mb-5" src="https://github.com/hexschool/webLayoutTraining1st/blob/master/week1/photo.png?raw=true" alt="Profile's image" data-aos="flip-left" data-aos-delay="250">
     
-            <h2 class="h2 pb-3 mb-3 border-bottom-primary">個人資料 
+            <h2 class="h2 pb-3 mb-3 border-bottom-primary" data-aos="fade-left" data-aos-delay="300">個人資料 
                 <span class="font-en font-weight-m h4 ml-2 text-secondary">PROFILE</span>
             </h2>
-            <ul class="h4 mb-5 line-height-m">
+            <ul class="h4 mb-5 line-height-m" data-aos="fade-left" data-aos-delay="400">
                 <li class="mb-4">
                     <p>
                         陳久安 Joanne Chen <br> 
@@ -35,10 +35,10 @@
         </div>
 
         <div class="education">
-            <h2 class="h2 pb-3 mb-3 border-bottom-primary">學歷
+            <h2 class="h2 pb-3 mb-3 border-bottom-primary" data-aos="fade-left" data-aos-delay="300">學歷
                 <span class="font-en font-weight-m h4 ml-2 text-secondary">EDUCATION</span>
             </h2>
-            <ul class="h4">
+            <ul class="h4" data-aos="fade-left" data-aos-delay="400">
                 <li class="mb-4">國立六角師範大學 視覺設計學系 學士學位 | 2016－2020</li>
                 <li>國立六腳高級中學 美術班 | 2013－2016</li>
             </ul>
@@ -47,10 +47,10 @@
 
     <div class="bg-dark text-light">
         <div class="skills py-4 text-center">
-            <h2 class="h2 pb-3 mb-5 border-bottom-light">技能
+            <h2 class="h2 pb-3 mb-5 border-bottom-light" data-aos="zoom-in" data-aos-delay="300">技能
                 <span class="font-en font-weight-m h4 ml-2">SKILLS</span>
             </h2>
-            <ul class="skills-list font-en font-weight-l h4 pl-4">
+            <ul class="skills-list font-en font-weight-l h4 pl-4" data-aos="zoom-in" data-aos-delay="400">
                 <li>Adobe Photoshop</li>
                 <li>Adobe Illustrator</li>
                 <li>Adobe XD</li>
@@ -63,10 +63,10 @@
     </div>
 
     <div class="experience container my-5">
-        <h2 class="h2 pb-3 mb-3 border-bottom-primary">工作經驗
+        <h2 class="h2 pb-3 mb-3 border-bottom-primary" data-aos="fade-left" data-aos-delay="300">工作經驗
             <span class="font-en font-weight-m h4 ml-2 text-secondary">WORK EXPERIENCE</span>
         </h2>
-        <ul class="experience-content h4 pl-4 ml-3">
+        <ul class="experience-content h4 pl-4 ml-3" data-aos="fade-left" data-aos-delay="400">
             <li class="mb-4">
                 <h3 class="mb-3">六角學院 視覺設計實習生 | 2019/07－2020/06</h3>
                 <img class="d-block mb-3" src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week1/Group%201.svg" alt="Hex School's logo">
@@ -95,10 +95,10 @@
     
     <div class="contact py-4 bg-dark">
         <div class="container text-light text-center">
-            <h2 class="h2 pb-3 mb-5 border-bottom-light">聯絡方式
+            <h2 class="h2 pb-3 mb-5 border-bottom-light" data-aos="zoom-in" data-aos-delay="300">聯絡方式
                 <span class="font-en font-weight-m h4 ml-2">CONTACT METHOD</span>
             </h2>
-            <ul class="font-en font-weight-l h4 line-height-m">
+            <ul class="font-en font-weight-l h4 line-height-m" data-aos="zoom-in" data-aos-delay="400">
                 <li class="mb-3">
                     Mail：<a class="contact-link text-light" href="mailto:">xxxd@hexschool.com</a>
                 </li>
@@ -110,7 +110,7 @@
                     作品連結：<a class="contact-link text-light" href="https://www.behance.net/xxxdddddd">https://www.behance.net/xxxdddddd</a>
                 </li>
             </ul>
-            <ul class="social-media-icon-list">
+            <ul class="social-media-icon-list" data-aos="zoom-in" data-aos-delay="400" data-aos-offset="50">
                 <li class="social-media-icon">
                     <a href="#">
                         <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week1/facebook.svg" alt="facebook's logo">
@@ -130,6 +130,31 @@
         </div>
     </div>
     
-    
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            // Global settings:
+            disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+            startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+            initClassName: 'aos-init', // class applied after initialization
+            animatedClassName: 'aos-animate', // class applied on animation
+            useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+            disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+            debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+            throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+            
+
+            // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+            offset: 120, // offset (in px) from the original trigger point
+            delay: 0, // values from 0 to 3000, with step 50ms
+            duration: 400, // values from 0 to 3000, with step 50ms
+            easing: 'ease', // default easing for AOS animations
+            once: true, // whether animation should happen only once - while scrolling down
+            mirror: false, // whether elements should animate out while scrolling past them
+            anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+        });
+    </script>
 </body>
 </html> 
